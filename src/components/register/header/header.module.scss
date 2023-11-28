@@ -1,0 +1,53 @@
+.containner {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+.headerText {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.textboxGroup1 {
+  display: flex;
+  justify-content: space-between;
+
+  .textboxRow {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+.textboxGroup2 {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.buttonGroups {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  .btnRfidBundle {
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+.test1223 {
+  display: flex;
+  justify-content: flex-end;
+}
+.btntest {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.btnadd {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
