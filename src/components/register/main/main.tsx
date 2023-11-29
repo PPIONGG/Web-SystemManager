@@ -30,8 +30,8 @@ export default function MainRegister() {
 
   const onCellHoverChanged = (e: any) => {
     if (e.rowType === "data" && e.column.dataField !== "State") {
-      const cellElement = e.cellElement;
-      cellElement.style.cursor = "pointer";
+      // const cellElement = e.cellElement;
+      // cellElement.style.cursor = "pointer";
     }
   };
 
@@ -80,7 +80,7 @@ export default function MainRegister() {
           />
         </DataGrid>
       </div>
-      <div className={styles.textworkbox}>Work box</div>
+      <div className={styles.textWorkbox}>Work box</div>
       <div className={styles.datagrid2}>
         <DataGrid dataSource={null} width="100%" showBorders={true}>
           <Column dataField="Size" dataType="string" allowSorting={false} />
