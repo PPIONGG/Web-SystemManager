@@ -13,6 +13,9 @@
   padding-bottom: 10px;
 }
 
+.ScanBarCode {
+  // background-color: red;
+}
 .textInformation {
   font-weight: 500;
 }
@@ -28,6 +31,9 @@
 .textboxGroup1 {
   display: grid;
   grid-template-columns: auto 300px;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 10px;
 }
 
 .Information {

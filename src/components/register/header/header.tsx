@@ -19,7 +19,7 @@ export default function HeaderRegister() {
           </div>
           <div className={styles.textbox}>
             <TextBox placeholder="Customer Name" readOnly />
-          </div >
+          </div>
           <div className={styles.textbox}>
             <TextBox placeholder="Customer Po" readOnly />
           </div>
