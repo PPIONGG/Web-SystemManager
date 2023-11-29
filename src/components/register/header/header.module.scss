@@ -17,6 +17,10 @@
   font-weight: 500;
 }
 
+.textbox {
+  width: 200px;
+}
+
 .textScanBarCode1 {
   font-weight: 500;
 }
@@ -102,6 +106,12 @@
   }
   .btnSearch {
     width: initial;
+  }
+  .textbox {
+    width: initial;
+  }
+  .Information {
+    justify-content: initial;
   }
 }
 

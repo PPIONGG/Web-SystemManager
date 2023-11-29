@@ -3,7 +3,6 @@ import styles from "./header.module.scss";
 import { Button } from "devextreme-react/button";
 
 export default function HeaderRegister() {
-
   return (
     <div className={styles.containner}>
       <div className={styles.textGroups}>
@@ -12,15 +11,33 @@ export default function HeaderRegister() {
       </div>
       <div className={styles.textboxGroup1}>
         <div className={styles.Information}>
-          <TextBox width={200} placeholder="POO No" />
-          <TextBox width={200} placeholder="Job" readOnly />
-          <TextBox width={200} placeholder="Customer Name" readOnly />
-          <TextBox width={200} placeholder="Customer Po" readOnly />
-          <TextBox width={200} placeholder="Note" readOnly />
-          <TextBox width={200} placeholder="Style No" readOnly />
-          <TextBox width={200} placeholder="Job Production No" readOnly />
-          <TextBox width={200} placeholder="Sub Job No" readOnly />
-          <TextBox width={200} placeholder="Gac Date" readOnly />
+          <div className={styles.textbox}>
+            <TextBox placeholder="POO No" />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Job" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Customer Name" readOnly />
+          </div >
+          <div className={styles.textbox}>
+            <TextBox placeholder="Customer Po" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Note" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Style No" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Job Production No" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Sub Job No" readOnly />
+          </div>
+          <div className={styles.textbox}>
+            <TextBox placeholder="Gac Date" readOnly />
+          </div>
         </div>
         <div className={styles.ScanBarCode}>
           <div className={styles.textScanBarCode2}>ScanBarCode Box</div>
@@ -36,11 +53,7 @@ export default function HeaderRegister() {
       </div>
       <div className={styles.textboxGroup3}>
         <div className={styles.btnSearch}>
-        <Button
-          text="Search"
-          type="normal"
-          stylingMode="contained"
-        />          
+          <Button text="Search" type="normal" stylingMode="contained" />
         </div>
       </div>
     </div>
