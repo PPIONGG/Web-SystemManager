@@ -12,7 +12,7 @@ export default function HeaderRegister() {
       <div className={styles.textboxGroup1}>
         <div className={styles.Information}>
           <div className={styles.textbox}>
-            <TextBox placeholder="POO No" />
+            <TextBox placeholder="Spreading Doc No" />
           </div>
           <div className={styles.textbox}>
             <TextBox placeholder="Job" readOnly />
@@ -48,7 +48,8 @@ export default function HeaderRegister() {
         <TextBox placeholder="RFID Bundle" />
         <div className={styles.btnGroups}>
           <Button text="Add" type="normal" stylingMode="contained" />
-          <Button text="Reprint All" type="normal" stylingMode="contained" />
+          <Button text="Reset" type="normal" stylingMode="contained" />
+          <Button text="Suspension" type="normal" stylingMode="contained" />
         </div>
       </div>
       <div className={styles.textboxGroup3}>
