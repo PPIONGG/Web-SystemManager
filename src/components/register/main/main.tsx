@@ -25,7 +25,7 @@ export default function MainRegister() {
               dataType="string"
               groupIndex={0}
             />
-            <Column dataField="size" dataType="string" allowSorting={false} />
+            <Column dataField="size" dataType="string" allowSorting={false}/>
             <Column dataField="route" dataType="string" allowSorting={false} />
             <Column
               caption="Qty"

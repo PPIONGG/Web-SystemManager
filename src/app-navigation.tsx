@@ -8,5 +8,10 @@ export const navigation = [
     text: 'Register',
     path: '/register',
     icon: 'card'
+  },
+  {
+    text: 'test',
+    path: '/test',
+    icon: 'rowproperties'
   }
   ];
