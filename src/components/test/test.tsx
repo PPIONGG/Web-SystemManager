@@ -45,9 +45,9 @@ export default function Test() {
   const handleCellClick = (index: string) => {
     setSelectedCell(index);
     console.log(`Selected cell: ${index}`);
-    const [rowIndex, colIndex] = index.split('-').map(Number);
-    const cellValue = rows[rowIndex][Object.keys(rows[rowIndex])[colIndex] as keyof typeof rows[0]];
-    console.log(` Value: ${cellValue}`);
+    // const [rowIndex, colIndex] = index.split('-').map(Number);
+    // const cellValue = rows[rowIndex][Object.keys(rows[rowIndex])[colIndex] as keyof typeof rows[0]];
+    // console.log(` Value: ${cellValue}`);
   };
 
   return (
@@ -87,6 +87,7 @@ export default function Test() {
                     padding: "8px",
                     height: "100px",
                     cursor: "pointer",
+                    backgroundColor: selectedCell === `${rowIndex}-${colIndex}` ? "#54e354" : "#d1d1d1",
                   }}
                 >
                   {selectedCell === `${rowIndex}-${colIndex}` ? (
