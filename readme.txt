@@ -7,3 +7,5 @@ npm install axios  @mui/material @emotion/react @emotion/styled antd sweetalert2
 เวลาตอน build แล้วเกิดปัญหา critical
 npm audit fix
 
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+

@@ -10,8 +10,13 @@ export const navigation = [
     icon: 'card'
   },
   {
-    text: 'test',
-    path: '/test',
-    icon: 'rowproperties'
-  }
+    text: 'RegisterV2',
+    path: '/registerTest',
+    icon: 'card'
+  },
+  // {
+  //   text: 'test',
+  //   path: '/test',
+  //   icon: 'rowproperties'
+  // }
   ];

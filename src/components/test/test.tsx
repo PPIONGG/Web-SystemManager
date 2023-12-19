@@ -6,6 +6,7 @@ import {
   TableHead,
   TableRow,
   Paper,
+  Button,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 
@@ -32,8 +33,19 @@ export default function Test() {
     setClickedCell(quantity);
   };
 
+  // useEffect(() => {
+  //   console.log("Clicked on boundleQuantity:", clickedCell);
+  // }, [clickedCell]);
+
   useEffect(() => {
-    console.log("Clicked on boundleQuantity:", clickedCell);
+    if (clickedCell !== null) {
+      const clickedItem = mockdata.find(
+        (item) => item.boundleQuantity === clickedCell
+      );
+      if (clickedItem) {
+        console.log("Clicked on Item:", clickedItem);
+      }
+    }
   }, [clickedCell]);
 
   return (
@@ -73,13 +85,14 @@ export default function Test() {
                       ? filteredData[0].boundleQuantity
                       : 0;
 
-                      const cellStyle = {
-                        border: "2px solid #f7d64f",
-                        cursor: 'pointer',
-                        backgroundColor: clickedCell === quantity ? 'yellow' : 'gray',
-                        // เพิ่มเงื่อนไขเพื่อให้พื้นหลังเป็นสีขาวเมื่อยังไม่มีการคลิก
-                        ...(clickedCell === null && { backgroundColor: 'white' }),
-                      };
+                  const cellStyle = {
+                    border: "2px solid #f7d64f",
+                    cursor: "pointer",
+                    backgroundColor:
+                      clickedCell === quantity ? "yellow" : "gray",
+                    // เพิ่มเงื่อนไขเพื่อให้พื้นหลังเป็นสีขาวเมื่อยังไม่มีการคลิก
+                    ...(clickedCell === null && { backgroundColor: "white" }),
+                  };
 
                   return (
                     <TableCell
@@ -96,6 +109,11 @@ export default function Test() {
           </TableBody>
         </Table>
       </TableContainer>
+      <div>
+        <Button>บวก</Button>
+        <span>ss</span>
+        <Button>ลบ</Button>
+      </div>
     </div>
   );
 }
