@@ -38,7 +38,7 @@ export default function RegisterHeader() {
               InputProps={{
                 style: {
                   borderRadius: "20px",
-                  width: "200px",
+                  width: "230px",
                   height: "30px",
                   color: "white",
                   fontWeight: "bold",
@@ -66,7 +66,7 @@ export default function RegisterHeader() {
               InputProps={{
                 style: {
                   borderRadius: "20px",
-                  width: "200px",
+                  width: "230px",
                   height: "30px",
                   color: "white",
                   fontWeight: "bold",
