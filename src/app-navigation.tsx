@@ -14,6 +14,11 @@ export const navigation = [
     path: '/registerTest',
     icon: 'card'
   },
+  {
+    text: 'Backdrop',
+    path: '/backdrop',
+    icon: 'card'
+  },
   // {
   //   text: 'test',
   //   path: '/test',

@@ -1,6 +1,7 @@
 import { HomePage, Register,RegisterV2 } from "./pages";
 import { withNavigationWatcher } from "./contexts/navigation";
 import test from "./components/test/test";
+import AppBackdrop from "./pages/Backdrop/BackdropApp";
 
 const routes = [
   {
@@ -14,6 +15,10 @@ const routes = [
   {
     path: "/registerTest",
     element: RegisterV2,
+  },
+  {
+    path: "/backdrop",
+    element: AppBackdrop,
   },
 //   {
 //     path: "/test",
